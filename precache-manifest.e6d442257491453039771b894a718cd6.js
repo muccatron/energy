@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8e14b483d4e3cb8c552890000b7ef1a",
+    "revision": "e93608f07ad95dd3bb3818f567e82842",
     "url": "/energy/index.html"
   },
   {
-    "revision": "2efb8973235b9f15512b",
+    "revision": "687c3c896bb3c896600a",
     "url": "/energy/static/css/main.733d2882.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/energy/static/js/2.628b1bd6.chunk.js"
   },
   {
-    "revision": "2efb8973235b9f15512b",
-    "url": "/energy/static/js/main.45677dcd.chunk.js"
+    "revision": "687c3c896bb3c896600a",
+    "url": "/energy/static/js/main.3a74169b.chunk.js"
   },
   {
     "revision": "f37c05d694b781f23894",
