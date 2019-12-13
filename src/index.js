@@ -6,7 +6,6 @@ import Tree from './Tree.png'
 import './App.css';
 
 
-
 const user = {
   "customer": {
     "id": "A29071",
@@ -18,11 +17,7 @@ const user = {
   }
 };
 
-
-
-
 var energySaved = user.energyUse.priorYear - user.energyUse.currentYear;
-
 
 class App extends React.Component {
   state={
@@ -33,7 +28,7 @@ class App extends React.Component {
       on: !this.state.on
     })
   }
-  // React requires render
+
   render() {
     let cars =[];
     for (let i=0; i<6; i++){
@@ -56,16 +51,14 @@ class App extends React.Component {
           <span> stop <b>12 TREES</b> being cut!</span> 
           }
         </h2>
-        <p>You used <span>{user.energyUse.currentYear}kWh</span> in January, compared to {user.energyUse.priorYear} in the same month last year. The resulting saving is enough to offset the energy consumption of six average cars for one month</p>
+        <p>You used <span>{user.energyUse.currentYear}kWh</span> in January, compared to {user.energyUse.priorYear}kWh in the same month last year. See below to find out how your resulting saving can help the enviroment!</p>
         <div className={`wrapper`}>
-          <div className={`column medium-4 large-3`}>
+          <div className={`column medium-4 chart`}>
             <Chart />
-            <h4>{energySaved} kWh Saved</h4>
+            <h4>💰{energySaved}kWh Saved</h4>
           </div>
           <div className={`column medium-2 centercenter`}>
-            <div className="equal">
-            ≈
-            </div>      
+            <div className="equal">≈</div>      
           </div>
           {this.state.on && 
           <div className={`column medium-4`}>          
@@ -82,12 +75,12 @@ class App extends React.Component {
         </div>
         <div>
           <button className={`ui basic button`} onClick={this.toggle}>
-          {this.state.on && 
-            <span><img className={`tree`} src={Tree} />Number of trees you've saved</span>
-          }
-          {!this.state.on &&
-            <span><img className={`garage`} src={Car} />Number of cars off the road</span>         
-          }
+            {this.state.on && 
+              <span><img className={`tree`} src={Tree} />Number of trees you've saved</span>
+            }
+            {!this.state.on &&
+              <span><img className={`garage`} src={Car} />Number of cars off the road</span>         
+            }
           </button>
         </div>
       </div>

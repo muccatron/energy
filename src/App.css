@@ -16,6 +16,10 @@ h2 {
   font-family: 'Oswald', sans-serif;
 }
 
+h2 b {
+  color:green;
+}
+
 h4 {
   margin: 5px;
   padding: 0;
@@ -29,10 +33,6 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin:0;
-}
-
-h2 b {
-  color:green;
 }
 
 .wrapper {
@@ -58,9 +58,9 @@ h2 b {
 }
 
 .equal {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
-  margin: 40px 0;
+  margin: 35px 0;
 }
 
 .column {
@@ -115,6 +115,7 @@ h2 b {
   h5 {
     font-size: 12px;
   }
+
   .medium-6 {
     width: 50%;
   }
@@ -133,5 +134,11 @@ h2 b {
   .garage {
     padding: 3%;
     width: 30%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .column.chart {
+    width: 70%;
   }
 }
